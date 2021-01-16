@@ -9,8 +9,10 @@ RUN apt update && \
 
 RUN conda install -y -c conda-forge \
     dask-cloudprovider \
+    dask-ml \
     scikit-learn \
     numpy \
-    pandas && \
+    pandas \
+    pytest && \
     pip install \
         awscli
